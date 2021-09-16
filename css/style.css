@@ -4,6 +4,39 @@
     box-sizing: border-box;
 }
 
+/*Me sirve para que cuando le de click en contacto u otro, la pagina baje sola*/
+:root{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;     /*Todo lo que se desborde o se salga del contenedor lo oculte*/
+    margin: auto;         /*Para que centro todo el contenido*/
+    padding: 60px 0;      /*Para que siempre haya espacio entre cada elemento*/
+}
+
+/*Con esto manipulo la imagen del encabezado*/
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.5) 0%, rgba(251, 194, 235, 0.5)100%), url(../imagenes/img5.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.head{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;      /*Esto me permite que ambos textos queden uno debajo del otro*/
+    
 }

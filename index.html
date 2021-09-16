@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/js/pagina.js">
+    <link rel="stylesheet" href="../PruebaEmpresa/css/style.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'> <!--Esto me permite usar los iconos desde boxicons-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> <!--Fuente de los textos-->
 
@@ -15,26 +14,113 @@
     <header class="header" id="inicio">
         <img src="imagenes/opciones.svg" alt="" class="opciones">      
         <nav class="menu-navegacion">
-            <a href="#">Inicio</a>
-            <a href="#">Galerias</a>
-            <a href="#">Quienes somos</a>
-            <a href="#">Contacto</a>
+            <a href="#servicio">Inicio</a>
+            <a href="#portafolio">Galerias</a>
+            <a href="#expertos">Nosotros</a>
+            <a href="#contacto">Contacto</a>
         </nav>
         <div class="contenedor head">
             <h1>Convertimos tus sueños en realidad</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor in sequi nam corporis voluptatum aut nesciunt sit cupiditate, dolorem inventore molestiae cum, laudantium optio vero aspernatur blanditiis dicta impedit!</p>
+            <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor in sequi nam corporis voluptatum aut nesciunt sit cupiditate, dolorem inventore molestiae cum, laudantium optio vero aspernatur blanditiis dicta impedit!</p>
         </div>
     </header>
-    <main>
+    <!--Contenido principal-->
+    <main> 
         <section class="services contenedor" id="servicio">
             <h2 class="subtitulo">Nuestro Servicio</h2>
             <div class="contenedor-servicio">
-              <img src="/imagenes/img1.jpg" alt="a">
+              <img src="../PruebaEmpresa/imagenes/img2.jpg" width="400px" alt="" > 
+              
+              <div class="img1-servicio">
+                  <div class="service">
+                      <h3 class="n-service"><span class="number">1</span>Diseño web</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Tempore consequuntur placeat deserunt fugit!
+                            Est consequatur incidunt necessitatibus voluptatum nam maxime?</p>
+
+                  </div>
+                  <div class="service">
+                      <h3 class="n-service"><span class="number">2</span>Diseño web</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Tempore consequuntur placeat deserunt fugit!
+                            Est consequatur incidunt necessitatibus voluptatum nam maxime?</p>
+
+                  </div>
+                  <div class="service">
+                      <h3 class="n-service"><span class="number">3</span>Diseño web</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Tempore consequuntur placeat deserunt fugit!
+                            Est consequatur incidunt necessitatibus voluptatum nam maxime?</p>
+
+                  </div>
+
+              </div>         
             </div>
+            
         </section>
+        <section class="gallery" id="portafolio">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galeria</h2>
+                <div class="contenedor-galeria">
+                    <img src="../PruebaEmpresa/imagenes/img1.jpg" width="600px" alt="" class="img-galeria">
+                    <img src="../PruebaEmpresa/imagenes/img2.jpg" width="600px" alt="" class="img-galeria">
+                    <img src="../PruebaEmpresa/imagenes/img3.jpg" width="600px" alt="" class="img-galeria">
+                    <img src="../PruebaEmpresa/imagenes/img4.jpg" width="600px" alt="" class="img-galeria">
+                    <!--<img src="../PruebaEmpresa/imagenes/img5.webp" alt="" class="img-galeria">
+                    <img src="../PruebaEmpresa/imagenes/" alt="" class="img-galeria">-->
+                </div>
+            </div>
+
+        </section>
+        <!-- Esta sección es para cuando le demos click a una imagen -->
+        <!-- <section class="imagen-light">
+            <img src="../PruebaEmpresa/imagenes/cerrar.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+
+        </section> -->
+
+        <setion class="contenedor" id="expertos">
+            <h2 class="subtitulo">Expertos en:</h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <img src="../PruebaEmpresa/imagenes/img6.jpg" width="400px" alt="">
+                    <h3 class="n-expert">Analytic</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="../PruebaEmpresa/imagenes/img6.jpg" width="400px" alt="">
+                    <h3 class="n-expert">SEO</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="../PruebaEmpresa/imagenes/img6.jpg" width="400px" alt="">
+                    <h3 class="n-expert">Security</h3>
+                </div>
+            </section>
+        </setion>
     </main>
-    <i class='bx bxl-facebook' ></i>
-    <i class='bx bxl-twitter' ></i>
-    <i class='bx bxl-instagram' ></i>
+    <footer class="contacto" id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">JorgePerea Design</h2>
+                <p>Cumpliendo Sueños</p>
+            </div>
+            <div class="social-media">
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-facebook' ></i>                
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-twitter' ></i>                                  
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-instagram' ></i>                   
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script src="../PruebaEmpresa/menu.js"></script>
+    <script src="../PruebaEmpresa/js/lightbox.js"></script>
 </body>
 </html>
